@@ -1,1 +1,1 @@
-# -Graded_index_optical_fiber
+# Graded_index_optical_fiber
