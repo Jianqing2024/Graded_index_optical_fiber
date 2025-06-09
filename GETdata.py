@@ -11,6 +11,7 @@ if spec is None or spec.loader is None:
     raise ImportError("无法加载 lumapi 模块或 loader 为空")
 
 lumapi = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(lumapi)
 
 fdtd = lumapi.FDTD(hide=False)
 
