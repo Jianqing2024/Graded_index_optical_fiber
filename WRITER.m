@@ -2,14 +2,14 @@ clear;clc
 % 设定参数
 nco = 1.4674;
 ncl = 1.4607;
-R_max = 61.2;
+R_max = 62.5;
 
 Nx = 200;
 Ny = 40000;
 Nz = 2;
 
-ymid=500;
-ymax=1500;
+ymid=250;
+ymax=1000;
 
 delta=(nco^2-ncl^2)/(2*nco^2);
 a=4.1;
