@@ -1,5 +1,6 @@
 clear;clc
-fid = fopen("new2.txt", 'r');
+name = "new2.txt";
+fid = fopen(name, 'r');
 num_header_lines = 3;
 headers = cell(num_header_lines, 1);
 for i = 1:num_header_lines
@@ -7,7 +8,7 @@ for i = 1:num_header_lines
 end
 fclose(fid);
 
-data1D = readmatrix("new.txt");
+data1D = readmatrix(name);
 
 dataX = str2num(headers{1});
 dataY = str2num(headers{2});

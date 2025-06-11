@@ -18,9 +18,9 @@ fdtd = lumapi.FDTD(hide=False)
 fdtd.load("TD3.fsp")
 aaa = fdtd.getdata("monitor", "Ex")
 
-bbb = fdtd.getdata("monitor_1", "Ex")
+bbb = fdtd.getdata("monitor_in", "Ex")
 
-ccc = fdtd.getdata("monitor_2", "Ex")
+ccc = fdtd.getdata("monitor_out", "Ex")
 
 a = np.abs(aaa)**2
 a_squeezed = np.squeeze(a)
